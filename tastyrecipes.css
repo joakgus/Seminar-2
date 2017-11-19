@@ -1,0 +1,302 @@
+
+.center{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*Menu*/
+body{margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover, .dd:hover .dropbtn {
+    background-color: green;
+}
+
+ul.topnav .active {
+    background-color: green;
+}
+ul.topnav li.dd {
+    display: inline-block;
+}
+
+ul.topnav .dd-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+ul.topnav .dd-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+ul.topnav.dd-content a:hover {background-color: #f1f1f1}
+
+ul.topnav .dd:hover .dd-content {
+    display: block;
+}
+     * {
+       margin: 0; 
+       padding: 0;
+     }
+     
+     @media screen and (max-width: 600px){
+         ul.topnav li.right,
+         ul.topnav li {float: none;}
+         
+         
+     }
+     
+     h1.text{
+         font-family: "Times New Roman", Times, serif;
+         font-size: 40px;
+         
+     }
+     p.text{
+         font-family: "Times New Roman", Times, serif;
+         font-size: 20px;
+
+     }
+
+ 
+
+
+/* calendar*/
+
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+/*Recipes*/
+
+#header{
+ 
+    clear: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+@media screen and (max-width: 480px){
+.food img {
+width:55%;
+min-width:220px;
+}
+}
+img .food{
+   
+    z-index: -1;
+}
+
+/*IMAge calendar*/
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: none;
+    width: 100px;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+     /* Banner*/
+/*body and container*/
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+body {
+	background: url('dark_geometric.png');
+}
+
+#container {
+	width: 1000px;
+	overflow: hidden;
+	margin: 50px auto;
+	background: white;
+}
+
+/*photobanner*/
+
+.photobanner {
+	height: 233px;
+	width: 1400px;
+	margin-bottom: 0px;
+}
+
+.photobanner img {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+
+	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+
+/*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 10s linear infinite;
+	-moz-animation: bannermove 10s linear infinite;
+	-ms-animation: bannermove 10s linear infinite;
+	animation: bannermove 10s linear infinite;
+}
+
+@keyframes "bannermove" {0% {margin-left: 0px;} 100% {    margin-left: -700px;}}
+
+@-moz-keyframes "bannermove" {0% {margin-left: 0px;} 100% {margin-left: -700px;}}
+
+@-webkit-keyframes "bannermove" {0% {margin-left: 0px;} 100% {margin-left: -700px;}}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -700px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -700px;
+ }
+
+}
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    .fix{
+        margin-bottom: 205px;
+    }
